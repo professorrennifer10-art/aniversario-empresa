@@ -1,0 +1,75 @@
+.month-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.month-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.month-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0052cc;
+  margin: 0 0 16px 0;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #0052cc;
+}
+
+.employees-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.employee-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ecf0f1;
+  font-size: 14px;
+  color: #34495e;
+}
+
+.employee-item:last-child {
+  border-bottom: none;
+}
+
+.employee-name {
+  font-weight: 500;
+  color: #2c3e50;
+  flex: 1;
+}
+
+.employee-date {
+  color: #7f8c8d;
+  font-size: 13px;
+  margin-left: 12px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .month-card {
+    padding: 16px;
+  }
+
+  .month-title {
+    font-size: 18px;
+  }
+
+  .employee-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+
+  .employee-date {
+    margin-left: 0;
+    margin-top: 4px;
+  }
+}

@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background: linear-gradient(135deg, #f0f4f8 0%, #e8f0f8 50%, #f0f4f8 100%);
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #0052cc 0%, #0052cc 100%);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 82, 204, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.app-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+  color: white;
+}
+
+.app-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.95;
+}
+
+.app-main {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.months-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.app-footer {
+  background-color: #0052cc;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* Responsivo para tablets */
+@media (max-width: 1024px) {
+  .app-title {
+    font-size: 28px;
+  }
+
+  .months-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 30px 15px;
+  }
+
+  .app-title {
+    font-size: 24px;
+  }
+
+  .app-subtitle {
+    font-size: 14px;
+  }
+
+  .app-main {
+    padding: 20px 15px;
+  }
+
+  .months-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* Responsivo para telas muito pequenas */
+@media (max-width: 480px) {
+  .app-header {
+    padding: 20px 10px;
+  }
+
+  .app-title {
+    font-size: 20px;
+  }
+
+  .app-subtitle {
+    font-size: 12px;
+  }
+
+  .app-main {
+    padding: 15px 10px;
+  }
+}

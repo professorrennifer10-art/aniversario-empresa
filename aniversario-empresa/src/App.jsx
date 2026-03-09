@@ -3,6 +3,7 @@ import MonthCard from './components/MonthCard';
 import MonthModal from './components/MonthModal';
 import { employees, months } from './data/birthdays';
 import './App.css';
+import logoImg from '/img/LOGO-ALLCANCI-2048x1062.png';
 
 function App() {
   const [selectedMonth, setSelectedMonth] = useState(null);
@@ -22,7 +23,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <img src="/img/LOGO-ALLCANCI-2048x1062.png" alt="Allcanci Logo" className="app-logo" />
+        <img src={logoImg} alt="Allcanci Logo" className="app-logo" />
         <div>
           <h1 className="app-title">🎂 Aniversariantes do Ano - Allcanci</h1>
           <p className="app-subtitle">Confira os aniversários de todos os nossos colaboradores</p>
